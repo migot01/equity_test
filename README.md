@@ -1,5 +1,5 @@
 # equity_QA_interview
-## The integration tests are located in the `cypress folder --> e2e`
+## The integration tests are located in the `e2e` folder inside the cypress folder
 
 ##Setting cypress project
 
