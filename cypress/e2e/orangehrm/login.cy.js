@@ -24,4 +24,16 @@ describe('OrangeHRM Login Page Test', ()=>{
         cy.url().should('include', '/dashboard/index')
     });
 
+    it('Verify error message with wrong creds', ()=>{
+
+        cy.get('input[name="username"]').type('Admin')
+          .get('input[name="password"]').type('admin1235')
+          .get('button[type="submit"]').click();
+        
+        //check error message is visible
+        cy.get('.oxd-text.oxd-text--p.oxd-alert-content-text')
+          .contains('Invalid credentials');
+
+    });
+
 });
