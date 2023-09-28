@@ -52,8 +52,8 @@ describe('OrangeHRM info page', ()=>{
           .type(newSSN);
 
         //click save button and save changes 
-
-    
+        cy.get('button[type="submit"]')
+          .click({ multiple: true })
 
     })
 
