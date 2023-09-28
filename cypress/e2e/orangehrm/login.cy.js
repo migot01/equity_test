@@ -36,4 +36,15 @@ describe('OrangeHRM Login Page Test', ()=>{
 
     });
 
+    it('display error message for missing username and password', ()=>{
+
+        cy.get('button[type="submit"]').click();
+
+        //check error message is visible
+        cy.get('.oxd-form-row')
+          .find('span')
+          .contains('Required');
+
+    });
+
 });
