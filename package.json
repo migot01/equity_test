@@ -1,0 +1,14 @@
+{
+  "name": "equity_test",
+  "version": "1.0.0",
+  "description": "## The integration tests are located in the `e2e` folder inside the cypress folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "patrick",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.3.0"
+  }
+}

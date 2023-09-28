@@ -4,9 +4,11 @@
 
 ## Setting cypress project
 
-1. Have node installed
-2. cd /your/project/path
-3. npm install cypress --save-dev
+1. Have node/npm installed
+2. run `npm -i init`
+- to create package.json file
+3. cd /your/project/path
+4. Run `npm install cypress --save-dev`
 - This will install Cypress locally as a dev dependency for your project.
 
 ## Running cypress test:
