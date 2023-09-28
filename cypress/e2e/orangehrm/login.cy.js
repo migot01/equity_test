@@ -47,4 +47,20 @@ describe('OrangeHRM Login Page Test', ()=>{
 
     });
 
+    it('verify forget password link works', ()=>{
+
+        //navigate to forgot password link and click on it
+        cy.get('.orangehrm-login-forgot')
+          .find('p')
+          .contains('Forgot your password? ')
+          .click();
+
+        //Verify user is directed to forget password page
+        cy.get('form.oxd-form')
+          .find('h6')
+          .contains('Reset Password');
+        cy.url().should('include','/requestPasswordResetCode')
+
+    });
+
 });
